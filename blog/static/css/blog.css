@@ -1,0 +1,63 @@
+h1 {
+    color: #FCA205;
+    font-family: 'Indie Flower', cursive;
+}
+
+h1 a {
+    color: #C390D4;
+}
+
+body {
+
+}
+
+.cabecalho {
+    background-color: #90C3D4;
+    padding-left: 15px;
+}
+
+.titulo h1{
+    color: white;
+    padding-left: 20px;
+    font-size: 70px;
+    text-align: center;
+}
+
+.subcabecalho {
+    color: pink;
+    font-size: 35px;
+    padding-left: 60px;
+    font-family: 'Indie Flower', cursive;
+    padding-top: 0px;
+    text-align: center;
+}
+
+.subtexto p{
+    font-size: 25px;
+    padding-left: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+.posts h1 {
+    font-family: 'Ranga', cursive;
+    padding-left: 15px;
+}
+
+.posts p {
+    font-size: 16px;
+    padding-left: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.posts {
+    width: 700px;
+    background-color: #F7F6DC;
+    margin-left: 300px;
+}
+
+#pub_date{
+    font-size: 12px;
+}

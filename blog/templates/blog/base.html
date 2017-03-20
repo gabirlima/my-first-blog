@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Primeiro blog feito 100% pela Gabi :)</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Sans|Ranga" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="cabecalho">
+            <div class="titulo">
+                <br />
+                <h1>BLOG DA GABI</h1>
+            </div>
+            <div class="subcabecalho">
+                <h2>Aprendendo Python e Django</h2>
+            </div>
+        </div>
+        <b />
+
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+        </div>
+
+    </body>
+</html>

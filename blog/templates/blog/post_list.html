@@ -1,25 +1,15 @@
-<html>
-    <head>
-        <title>Primeiro blog feito 100% pela Gabi :)</title>
-    </head>
-    <body>
-        <div>
-            <h1>BLOG DA GABI</h1>
-        </div>
-        <div>
-            <h2>Aprendendo Python e Django</h2>
-        </div>
-        <div>
-            <p>Participei do Django Girls e estou aprendendo a programar com Python e Django!</p>
-        </div>
+{% extends 'blog/base.html' %}
 
-        {% for post in posts %}
-        <div>
-            <p>published: {{ post.published_date }}</p>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
-        {% endfor %}
+{% block content %}
+    <div class='subtexto'>
+        <p>Participei do Django Girls e estou aprendendo a programar com Python e Django!</p>
+    </div>
 
-    </body>
-</html>
+    {% for post in posts %}
+    <div class='posts'>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+        <p id='pub_date'>publicado em: {{ post.published_date }}</p>
+    </div>
+    {% endfor %}
+{% endblock content %}
