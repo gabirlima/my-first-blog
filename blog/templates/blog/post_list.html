@@ -12,5 +12,14 @@
         <div>
             <p>Participei do Django Girls e estou aprendendo a programar com Python e Django!</p>
         </div>
+
+        {% for post in posts %}
+        <div>
+            <p>published: {{ post.published_date }}</p>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+        {% endfor %}
+
     </body>
 </html>
